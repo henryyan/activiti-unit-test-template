@@ -1,4 +1,4 @@
-package org.activiti;
+package org.activiti.v511;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.activiti.engine.test.ActivitiRule;
@@ -14,7 +14,7 @@ public class MyUnitTest {
 	public ActivitiRule activitiRule = new ActivitiRule();
 	
 	@Test
-	@Deployment(resources = {"org/activiti/test/my-process.bpmn20.xml"})
+	@Deployment(resources = {"org/activiti/test/v511/my-process.bpmn20.xml"})
 	public void test() {
 		ProcessInstance processInstance = activitiRule.getRuntimeService().startProcessInstanceByKey("my-process");
 		assertNotNull(processInstance);

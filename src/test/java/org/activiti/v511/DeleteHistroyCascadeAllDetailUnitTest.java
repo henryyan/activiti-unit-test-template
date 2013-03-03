@@ -1,4 +1,4 @@
-package org.activiti;
+package org.activiti.v511;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -20,7 +20,7 @@ public class DeleteHistroyCascadeAllDetailUnitTest {
   public ActivitiRule activitiRule = new ActivitiRule();
 
   @Test
-  @Deployment(resources = { "org/activiti/test/Process1.bpmn", "org/activiti/test/Process2.bpmn" })
+  @Deployment(resources = { "org/activiti/test/v511/Process1.bpmn", "org/activiti/test/v511/Process2.bpmn" })
   public void test() {
     RuntimeService runtimeService = activitiRule.getRuntimeService();
     

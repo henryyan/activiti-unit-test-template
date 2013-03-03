@@ -1,4 +1,4 @@
-package org.activiti;
+package org.activiti.v511;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -24,7 +24,7 @@ public class CallActivityDoNotPersistentInitiatorUnitTest {
   public ActivitiRule activitiRule = new ActivitiRule();
 
   @Test
-  @Deployment(resources = { "org/activiti/test/callactivity/MasterProcess.bpmn", "org/activiti/test/callactivity/payment.bpmn" })
+  @Deployment(resources = { "org/activiti/test/v511/callactivity/MasterProcess.bpmn", "org/activiti/test/v511/callactivity/payment.bpmn" })
   public void test() {
     RuntimeService runtimeService = activitiRule.getRuntimeService();
     IdentityService identityService = activitiRule.getIdentityService();
