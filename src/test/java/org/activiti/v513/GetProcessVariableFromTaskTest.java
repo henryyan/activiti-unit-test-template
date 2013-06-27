@@ -1,4 +1,4 @@
-package org.activiti.test.v513;
+package org.activiti.v513;
 
 import java.util.Arrays;
 import java.util.HashMap;
