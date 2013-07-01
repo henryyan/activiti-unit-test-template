@@ -26,7 +26,7 @@ public class GetProcessVariableFromTaskTest extends PluggableActivitiTestCase {
         vars.put("basicType", "I'm String.");
         runtimeService.startProcessInstanceByKey("oneTaskProcess", vars);
         Task task = taskService.createTaskQuery().includeProcessVariables().singleResult();
-        assertNotNull(task.getProcessVariables());
+        assertEquals(1, task.getProcessVariables().size());
     }
 
     @Deployment(resources = "org/activiti/test/v513/oneProcess.bpmn20.xml")
@@ -35,7 +35,7 @@ public class GetProcessVariableFromTaskTest extends PluggableActivitiTestCase {
         vars.put("basicType", Arrays.asList("one", "two", "three"));
         runtimeService.startProcessInstanceByKey("oneTaskProcess", vars);
         Task task = taskService.createTaskQuery().includeProcessVariables().singleResult();
-        assertNotNull(task.getProcessVariables());
+        assertEquals(1, task.getProcessVariables().size());
     }
 
 }

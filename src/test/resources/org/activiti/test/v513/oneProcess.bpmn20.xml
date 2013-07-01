@@ -9,7 +9,9 @@
         <startEvent id="theStart" />
         <sequenceFlow id="flow1" sourceRef="theStart" targetRef="theProcessTask" />
         <userTask id="theProcessTask" name="my process task" activiti:assignee="kermit" />
-        <sequenceFlow id="flow2" sourceRef="theProcessTask" targetRef="theEnd" />
+        <sequenceFlow id="flow2" sourceRef="theProcessTask" targetRef="receive1" />
+        <receiveTask id="receive1" name="Wait State" />
+        <sequenceFlow id="flow3" sourceRef="receive1" targetRef="theEnd" />
         <endEvent id="theEnd" />
 
     </process>
