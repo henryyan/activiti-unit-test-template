@@ -23,6 +23,10 @@
     <orderEntry type="library" name="Maven: org.activiti:activiti-engine:5.14-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.activiti:activiti-bpmn-converter:5.14-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.activiti:activiti-bpmn-model:5.14-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.activiti:activiti-engine:5.14-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.activiti:activiti-bpmn-converter:5.14-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.activiti:activiti-bpmn-model:5.14-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
